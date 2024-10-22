@@ -1,0 +1,267 @@
+.encabezado__container {
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.encabezado__logo--icono {
+    max-width: 260px;
+}
+
+.hamburger-menu {
+    display: none;
+    /* Oculto en pantallas grandes */
+    font-size: 30px;
+    cursor: pointer;
+    color: #8C8C8C;
+}
+
+.encabezado__navegacion--lista {
+    display: flex;
+    color: white;
+    gap: 40px;
+    list-style-type: none;
+}
+
+
+
+.encabezado__navegacion--elemento a {
+    color: var(--blanco);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0%;
+
+}
+
+
+.banner__img--wrapper {
+    margin: 0;
+}
+
+
+.banner__img {
+    height: 60%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.banner__img--descripcion {
+    max-width: 1200px;
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 10px auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.ofertas {
+    margin-bottom: 112px;
+    display: flex;
+    gap: 40px;
+}
+
+.ofertas__titulo--texto{
+   margin: 64px 20px 0px; 
+}
+
+.ofertas__titulo {
+    color: var(--grafito);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+
+.ofertas__titulo--subrayado {
+    width: 180px;
+    height: 4px;
+    background: var(--rojo);
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+.pago {
+    margin-bottom: 112px;
+}
+
+p {
+    margin: 0%;
+}
+
+.pago__imagenes--grupo,
+.pago__condiciones {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 0 0 40px;
+}
+
+.pago__condiciones--destaque {
+    color: var(--grafito, #222);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 25px;
+    margin: 0px 0px 24px;
+
+}
+
+.pago__condiciones--detalles {
+    color: var(--grafito, #222);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 584px;
+    max-width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.pago__imagenes--imagen-container {
+    flex: 1;
+}
+
+.pago__imagenes--imagen-destaque {
+    margin-top: 20px;
+}
+
+.pago__imagenes--imagen {
+    max-width: 100%;
+}
+
+
+
+
+.pre-footer__image {
+    width: 100%;
+    display: block;
+}
+
+.footer__container {
+    background: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+    margin-top: -4px;
+}
+
+.footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--blanco, #FFF);
+}
+
+.footer__logo-icon {
+    max-width: 160px;
+    margin-bottom: 16px;
+}
+
+.footer__info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__text-info {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 160% */
+}
+
+.footer__social-media-container {
+    text-align: center;
+}
+
+.footer__social-media-text {
+    color: var(--neutral-c, #F5F5F5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+@media(max-width: 820px) {
+
+    .container {
+        max-width: 1200px;
+        margin: 30px;
+    }
+    .encabezado__logo--icono {
+        content: url(./img/Logo-provisória-branca\ 1.png);
+        padding: 0px 0px 0px 20px;
+    }
+
+
+    .encabezado__navegacion--lista {
+        display: none;
+        flex-direction: column;
+        background-color: var(--blanco);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .encabezado__navegacion--lista.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+        padding: 0px 25px;
+    }
+
+    .busca__categorias {
+        flex-wrap: wrap;
+    }
+
+    .busca__categoria {
+        padding: 30px;
+    }
+
+    .destinos__elemento{
+        flex-direction: column;
+    }
+
+
+
+}
